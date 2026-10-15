@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X-Fitness | Register</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <h2 class="logo">X-FITNESS</h2>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="media.html">Media</a>
+            <a href="register.html">Register</a>
+            <a href="services.html">Services</a>
+            <a href="trainers.html">Trainers</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="register-section">
+            <h1>JOIN X-FITNESS</h1>
+            <p class="subtitle">Register today and start your fitness journey.</p>
+
+            <form action="#" method="get">
+
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" name="fullname"
+                       placeholder="Enter your full name"
+                       required minlength="3" maxlength="50">
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email"
+                       placeholder="example@email.com" required>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password"
+                       placeholder="At least 8 characters"
+                       minlength="8" required>
+
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone"
+                       placeholder="03XXXXXXXXX" required>
+
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" name="dob" required>
+
+                <label for="age">Age</label>
+                <input type="number" id="age" name="age"
+                       min="16" max="100" required>
+
+                <label for="favcolor">Favourite Color</label>
+                <input type="color" id="favcolor" name="favcolor"
+                       value="#f32638">
+
+                <label for="starttime">Preferred Workout Time</label>
+                <input type="time" id="starttime" name="starttime">
+
+                <label for="duration">Workout Duration (minutes)</label>
+                <input type="range" id="duration" name="duration"
+                       min="15" max="120" value="30">
+
+                <label for="goal">Fitness Goal</label>
+                <select id="goal" name="goal" required>
+                    <option value="">Select your goal</option>
+                    <option value="weight-loss">Weight Loss</option>
+                    <option value="muscle-gain">Muscle Gain</option>
+                    <option value="fitness">General Fitness</option>
+                    <option value="strength">Strength Training</option>
+                </select>
+
+                <label for="experience">Fitness Experience</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="experience"
+                                  value="beginner" required> Beginner</label>
+                    <label><input type="radio" name="experience"
+                                  value="intermediate"> Intermediate</label>
+                    <label><input type="radio" name="experience"
+                                  value="advanced"> Advanced</label>
+                </div>
+
+                <label>Preferred Training</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="training"
+                                  value="cardio"> Cardio</label>
+                    <label><input type="checkbox" name="training"
+                                  value="strength"> Strength</label>
+                    <label><input type="checkbox" name="training"
+                                  value="personal"> Personal Training</label>
+                </div>
+
+                <label for="message">Additional Information</label>
+                <textarea id="message" name="message" rows="4"
+                          maxlength="300"
+                          placeholder="Tell us about your fitness goals"></textarea>
+
+                <label for="membership">Membership Type (Read Only)</label>
+                <input type="text" id="membership" name="membership"
+                       value="Standard Membership" readonly>
+
+                <label for="branch">Branch Status</label>
+                <input type="text" id="branch" name="branch"
+                       value="Online registration available" disabled>
+
+                <div class="terms">
+                    <label>
+                        <input type="checkbox" name="terms" required>
+                        I agree to the registration terms.
+                    </label>
+                </div>
+
+                <div class="form-buttons">
+                    <button type="submit">Register Now</button>
+                    <button type="reset" class="reset-btn">Clear Form</button>
+                </div>
+
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 X-Fitness Pakistan</p>
+    </footer>
+
+</body>
+</html>
